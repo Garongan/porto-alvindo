@@ -3,7 +3,7 @@ const Overview = () => {
     <div className="flex flex-row items-center justify-center py-24 px-24 divide-x">
       <div className="basis-full p-6 flex justify-end">
         <img
-          src="src/assets/3x4 c.jpg"
+          src="profile.jpg"
           alt=""
           className="rounded-full object-cover object-top w-96 h-96"
         />
