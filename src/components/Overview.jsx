@@ -6,7 +6,7 @@ const Overview = () => {
           <img
             src="profile.jpg"
             alt=""
-            className="rounded-full object-cover object-top w-72 h-72"
+            className="rounded-full object-cover object-top w-72 h-72 shadow-lg dark:shadow-lg-dark"
           />
         </div>
         {/* overview start */}

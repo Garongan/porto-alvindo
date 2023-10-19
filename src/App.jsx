@@ -13,23 +13,22 @@ function App() {
 
   useEffect(() => {
     // Mengirim permintaan ke Web App Google Apps Script
-    axios.get("https://script.google.com/macros/s/AKfycbz3coSEKmTRtoyjMkVKM9ujoBoEa7bGHZ2Qr559fpO81U3Wx4uQW7Bl6psIAxQAGYPN/exec")
-      .then(response => {
+    axios
+      .get("https://sheet.best/api/sheets/94d4a247-d382-4bbd-8f4c-0c35a73405d3")
+      .then((response) => {
         setData(response.data); // Mengatur data ke state React
       })
-      .catch(error => {
+      .catch((error) => {
         console.error("Error fetching data: ", error);
       });
   }, []);
-
-  console.log({ data: data });
 
   return (
     <>
       <Header />
       <Overview />
       <BreakSection />
-      <Portfolio />
+      <Portfolio data={data} />
       <Footer />
     </>
   );
