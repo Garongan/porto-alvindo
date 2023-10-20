@@ -5,7 +5,4 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   envDir: '.',
   plugins: [react()],
-  define: {
-    'process.env.VITE_API': JSON.stringify(import.meta.env.VITE_API),
-  },
 })
