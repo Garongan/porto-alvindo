@@ -27,12 +27,25 @@ function App() {
       });
   }, [apiKey]);
 
+ const scrollToSection = (event) => {
+  const targetSection = event.target.getAttribute("data-section");
+  
+  const section = document.getElementById(targetSection);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
   return (
     <>
-      <Header />
-      <Overview />
-      <BreakSection />
-      <Portfolio data={data} isLoadApi={isLoadApi} />
+      <section id="overview">
+        <Header scrollToSection={scrollToSection} />
+        <Overview />
+        <BreakSection />
+      </section>
+      <section id="portofolio">
+        <Portfolio data={data} isLoadApi={isLoadApi} />
+      </section>
       <Footer />
     </>
   );
