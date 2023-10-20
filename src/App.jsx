@@ -10,25 +10,29 @@ import axios from "axios";
 
 function App() {
   const [data, setData] = useState([]);
+  const apiKey = import.meta.env.VITE_API;
+  const [isLoadApi, setIsLoadApi] = useState(true);
 
   useEffect(() => {
-    // Mengirim permintaan ke Web App Google Apps Script
     axios
-      .get("https://sheet.best/api/sheets/94d4a247-d382-4bbd-8f4c-0c35a73405d3")
+      .get(apiKey)
       .then((response) => {
-        setData(response.data); // Mengatur data ke state React
+        setData(response.data);
       })
       .catch((error) => {
         console.error("Error fetching data: ", error);
+      })
+      .finally(() => {
+        setIsLoadApi(false);
       });
-  }, []);
+  }, [apiKey]);
 
   return (
     <>
       <Header />
       <Overview />
       <BreakSection />
-      <Portfolio data={data} />
+      <Portfolio data={data} isLoadApi={isLoadApi} />
       <Footer />
     </>
   );

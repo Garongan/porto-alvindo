@@ -7,7 +7,7 @@ const RedirectButton = ({ url, buttonText }) => {
   return (
     <button
       onClick={redirectToURL}
-      className="bg-slate-950 rounded-lg p-3 flex mx-auto"
+      className="bg-slate-950 rounded-lg p-3 flex mx-auto hover:underline hover:shadow-lg dark:hover:shadow-lg-dark"
     >
       {buttonText}
     </button>

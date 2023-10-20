@@ -1,7 +1,7 @@
 const Overview = () => {
   return (
     <div className="container mx-auto py-6">
-      <div className="flex flex-row items-center justify-center divide-x">
+      <div className="flex flex-col md:flex-row items-center justify-center divide-y md:divide-x md:divide-y-0">
         <div className="basis-full p-6 flex justify-end">
           <img
             src="profile.jpg"
