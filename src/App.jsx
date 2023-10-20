@@ -10,7 +10,7 @@ import axios from "axios";
 
 function App() {
   const [data, setData] = useState([]);
-  const apiKey = import.meta.env.VITE_API;
+  const apiKey = process.env.VITE_API;
   const [isLoadApi, setIsLoadApi] = useState(true);
 
   useEffect(() => {
