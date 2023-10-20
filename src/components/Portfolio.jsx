@@ -11,14 +11,14 @@ const Portfolio = ({ data, isLoadApi }) => {
   return (
     <div className="py-6">
       <div className="text-3xl container mx-auto px-8">My Portfolio</div>
-      <div className="container mx-auto py-6 px-8 ">
+      <div className="container mx-auto py-6 px-8">
         {isLoadApi ? (
           <div className="bg-slate-900 animate-pulse w-full h-screen rounded-lg fadeOut"></div>
         ) : (
-          <div className="grid grid-flow-col">
+          <div className="flex flex-col gap-4 overflow-auto h-[32rem] bg-slate-900/50 p-6 rounded-lg">
             {data.map((item, index) => (
               <div
-                className="bg-slate-900 p-4 rounded-lg w-full fadeIn hover:shadow-lg-dark"
+                className="bg-slate-800 p-4 rounded-lg fadeIn"
                 key={index}
               >
                 <div className="flex flex-row gap-4 justify-center">
