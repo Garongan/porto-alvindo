@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 import RedirectButton from "./RedirectButton";
 
-const Overview = () => {
+const Overview = ({ isLoading, handleLoad }) => {
   return (
     <div className="container mx-auto pb-6 pt-24">
       <div className="flex flex-col md:flex-row items-center justify-center divide-y md:divide-x md:divide-y-0">
@@ -8,7 +9,16 @@ const Overview = () => {
           <img
             src="profile.jpg"
             alt="profile"
-            className="rounded-full object-cover object-top w-72 h-72 shadow-lg shadow-lg-dark brightness-90"
+            className={`${
+              isLoading ? "hidden" : "block"
+            } rounded-full object-cover object-top w-72 h-72 shadow-lg shadow-lg-dark brightness-90`}
+            onLoad={handleLoad}
+            loading="lazy"
+          />
+          <img
+            className={`animate-pulse w-72 h-72 bg-slate-950 rounded-full object-cover fadeOut border-2 ${
+              isLoading ? "block" : "hidden"
+            }`}
           />
         </div>
         {/* overview start */}

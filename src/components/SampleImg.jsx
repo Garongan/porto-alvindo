@@ -5,7 +5,7 @@ export const SampleImg = ({ src, name, handleLoad, isLoading, index }) => {
       src={src}
       alt={name}
       onLoad={handleLoad}
-      className={`${isLoading ? "hidden" : "block"} w-auto h-[4.5rem] sm:h-48 lg:h-80`}
+      className={`${isLoading ? "hidden" : "block"} w-auto h-[8rem] sm:h-48 lg:h-80`}
       loading={`${index > 2 ? "lazy" : "eager"}`}
     />
   );
