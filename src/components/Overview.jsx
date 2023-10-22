@@ -16,7 +16,7 @@ const Overview = ({ isLoading, handleLoad }) => {
             loading="lazy"
           />
           <img
-            className={`animate-pulse w-72 h-72 bg-slate-950 rounded-full object-cover fadeOut border-2 ${
+            className={`animate-pulse w-72 h-72 bg-slate-900 rounded-full object-cover fadeOut border-2 ${
               isLoading ? "block" : "hidden"
             }`}
           />
