@@ -7,13 +7,13 @@ const Overview = ({ isLoading, handleLoad }) => {
       <div className="flex flex-col md:flex-row items-center justify-center divide-y md:divide-x md:divide-y-0">
         <div className="basis-full p-6 flex justify-end">
           <img
-            src="profile.jpg"
+            src="profile.webp"
             alt="profile"
             className={`${
               isLoading ? "hidden" : "block"
-            } rounded-full object-cover object-top w-72 h-72 shadow-lg shadow-lg-dark brightness-90`}
+            } rounded-full object-cover w-72 h-72 shadow-lg shadow-lg-dark brightness-90`}
             onLoad={handleLoad}
-            loading="lazy"
+            loading="eager"
           />
           <img
             className={`animate-pulse w-72 h-72 bg-slate-900 rounded-full object-cover fadeOut border-2 ${
