@@ -2,7 +2,7 @@ import RedirectButton from "./RedirectButton";
 import { SampleImg } from "./SampleImg";
 
 /* eslint-disable react/prop-types */
-const Portfolio = ({ data, isLoadApi, isLoading, handleLoad }) => {
+const Portfolio = ({ data, isLoadApi }) => {
   
   return (
     <div className="py-6">
@@ -18,30 +18,23 @@ const Portfolio = ({ data, isLoadApi, isLoading, handleLoad }) => {
                   <SampleImg
                     src={item.imgDekstop}
                     name={item.name}
-                    handleLoad={handleLoad}
-                    isLoading={isLoading}
                     index={index}
+                    aspect={'aspect-[16/10]'}
                   />
                   <SampleImg
                     src={item.imgTablet}
                     name={item.name}
-                    handleLoad={handleLoad}
-                    isLoading={isLoading}
                     index={index}
+                    aspect={'aspect-[18/22.5]'}
                   />
                   <SampleImg
                     src={item.imgMobile}
                     name={item.name}
-                    handleLoad={handleLoad}
-                    isLoading={isLoading}
                     index={index}
+                    aspect={'aspect-[9/19.5]'}
                   />
                 </div>
-                <img
-                  className={`animate-pulse w-full h-32 bg-slate-950 rounded-lg fadeOut border-2 ${
-                    isLoading ? "block" : "hidden"
-                  }`}
-                />
+                
                 <div className="divide-y flex flex-col">
                   <div className="cardHeader py-3">
                     <div className="text-lg sm:text-xl">Title: </div>

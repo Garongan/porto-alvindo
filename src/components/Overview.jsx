@@ -1,7 +1,14 @@
 /* eslint-disable react/prop-types */
+import { useState } from "react";
 import RedirectButton from "./RedirectButton";
 
-const Overview = ({ isLoading, handleLoad }) => {
+const Overview = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  const handleLoad = () => {
+    setIsLoading(false);
+  };
+
   return (
     <div className="container mx-auto pb-6 pt-24">
       <div className="flex flex-col md:flex-row items-center justify-center divide-y md:divide-x md:divide-y-0">

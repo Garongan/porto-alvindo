@@ -12,7 +12,6 @@ function App() {
   const [data, setData] = useState([]);
   const apiKey = import.meta.env.VITE_API;
   const [isLoadApi, setIsLoadApi] = useState(true);
-  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     axios
@@ -37,19 +36,18 @@ function App() {
     }
   };
 
-  const handleLoad = () => {
-    setIsLoading(false);
-  };
-
   return (
     <>
       <section id="overview">
         <Header scrollToSection={scrollToSection} />
-        <Overview isLoading={isLoading} handleLoad={handleLoad} />
+        <Overview />
         <BreakSection />
       </section>
       <section id="portofolio">
-        <Portfolio data={data} isLoadApi={isLoadApi} isLoading={isLoading} handleLoad={handleLoad} />
+        <Portfolio
+          data={data}
+          isLoadApi={isLoadApi}
+        />
       </section>
       <Footer />
     </>
