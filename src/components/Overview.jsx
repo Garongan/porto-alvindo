@@ -18,7 +18,7 @@ const Overview = () => {
             alt="profile"
             className={`${
               isLoading ? "hidden" : "block"
-            } rounded-full object-cover w-72 h-72 shadow-lg shadow-lg-dark brightness-90`}
+            } rounded-full object-cover w-72 h-72 shadow-lg dark:shadow-lg-dark brightness-90`}
             onLoad={handleLoad}
             loading="eager"
           />

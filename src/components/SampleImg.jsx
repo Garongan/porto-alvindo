@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 /* eslint-disable react/prop-types */
-export const SampleImg = ({ src, name, index, aspect }) => {
+const SampleImg = ({ src, name, index, aspect }) => {
   const [isLoading, setIsLoading] = useState(true);
 
   const handleLoad = () => {
@@ -27,3 +27,5 @@ export const SampleImg = ({ src, name, index, aspect }) => {
     </>
   );
 };
+
+export default SampleImg
