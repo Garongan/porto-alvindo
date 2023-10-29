@@ -20,7 +20,7 @@ const SampleVideo = ({ src }) => {
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
-          className="aspect-video w-1/2 rounded-lg"
+          className="aspect-video lg:w-1/2 w-full rounded-lg"
         />
       </div>
     </>

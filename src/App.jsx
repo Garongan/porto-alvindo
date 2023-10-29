@@ -7,6 +7,7 @@ import Overview from "./components/Overview";
 import Portfolio from "./components/Portfolio";
 import { useEffect } from "react";
 import axios from "axios";
+import Power from "./components/Power";
 
 function App() {
   const [data, setData] = useState([]);
@@ -36,6 +37,8 @@ function App() {
     }
   };
 
+  console.log(data);
+
   return (
     <>
       <section id="overview">
@@ -44,11 +47,9 @@ function App() {
         <BreakSection />
       </section>
       <section id="portofolio">
-        <Portfolio
-          data={data}
-          isLoadApi={isLoadApi}
-        />
+        <Portfolio data={data} isLoadApi={isLoadApi} />
       </section>
+      <Power power={data.map((item) => item.power)} />
       <Footer />
     </>
   );
