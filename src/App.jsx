@@ -18,7 +18,8 @@ function App() {
     axios
       .get(apiKey)
       .then((response) => {
-        setData(response.data);
+        const reversedItems = response.data.slice().reverse();
+        setData(reversedItems);
       })
       .catch((error) => {
         console.error("Error fetching data: ", error);
@@ -36,8 +37,6 @@ function App() {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
-
-  console.log(data);
 
   return (
     <>
