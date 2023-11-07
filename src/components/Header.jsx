@@ -9,8 +9,7 @@ const Header = ({ scrollToSection }) => {
         <ul className="list-none flex items-center gap-4 text-sm md:text-base justify-end basis-full">
           <li>
             <button
-              onClick={scrollToSection}
-              data-section="overview"
+              onClick={() => scrollToSection('overview')}
               className="hover:underline"
             >
               Overview
@@ -18,8 +17,7 @@ const Header = ({ scrollToSection }) => {
           </li>
           <li>
             <button
-              onClick={scrollToSection}
-              data-section="portofolio"
+              onClick={() => scrollToSection('portofolio')}
               className="hover:underline"
             >
               Portfolio

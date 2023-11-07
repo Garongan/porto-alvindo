@@ -3,8 +3,8 @@ const Power = ({ power }) => {
   return (
     <div className="py-6">
       <div className="text-3xl container mx-auto px-8">My Power</div>
-      <div className="bg-slate-900/50 py-6 my-6 px-8">
-        <div className="container mx-auto grid lg:grid-cols-6 sm:grid-cols-2 grid-cols-1 gap-4 sm:h-auto h-96 overflow-auto">
+      <div className="bg-slate-900/50 my-6 px-4">
+        <div className="container p-4 mx-auto grid lg:grid-cols-6 sm:grid-cols-2 grid-cols-1 gap-4">
           {power.map((item, index) => {
             return (
               <div

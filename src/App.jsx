@@ -29,9 +29,7 @@ function App() {
       });
   }, [apiKey]);
 
-  const scrollToSection = (event) => {
-    const targetSection = event.target.getAttribute("data-section");
-
+  const scrollToSection = (targetSection) => {
     const section = document.getElementById(targetSection);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
@@ -44,11 +42,11 @@ function App() {
         <Header scrollToSection={scrollToSection} />
         <Overview />
         <BreakSection />
+        <Power power={data.map((item) => item.power)} />
       </section>
       <section id="portofolio">
-        <Portfolio data={data} isLoadApi={isLoadApi} />
+        <Portfolio data={data} isLoadApi={isLoadApi} scrollToSection={scrollToSection} />
       </section>
-      <Power power={data.map((item) => item.power)} />
       <Footer />
     </>
   );
