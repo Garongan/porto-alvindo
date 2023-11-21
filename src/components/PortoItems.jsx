@@ -2,31 +2,33 @@
 
 import RedirectButton from "./RedirectButton";
 import SampleImg from "./SampleImg";
-import SampleVideo from "./SampleVideo";
+import Youtube from "react-youtube";
 
 const PortoItems = ({ data }) => {
   return (
     <>
       {data.map((item, index) => (
         <div className="bg-slate-800 p-4 rounded-lg fadeIn" key={index}>
-          <SampleVideo src={item.youtube} />
+          <div className="flex mx-auto w-fit p-4 mb-4 bg-slate-900 rounded-lg shadow-lg">
+            <Youtube
+              videoId={item.youtube}
+              className="aspect-video"
+            />
+          </div>
           <div className="flex flex-row justify-start gap-2 sm:justify-around sm:gap-0 overflow-x-auto sm:overflow-hidden">
             <SampleImg
               src={item.imgDekstop}
               name={item.name}
-              index={index}
               aspect={"aspect-[16/10]"}
             />
             <SampleImg
               src={item.imgTablet}
               name={item.name}
-              index={index}
               aspect={"aspect-[18/22.5]"}
             />
             <SampleImg
               src={item.imgMobile}
               name={item.name}
-              index={index}
               aspect={"aspect-[9/19.5]"}
             />
           </div>

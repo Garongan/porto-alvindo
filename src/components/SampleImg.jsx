@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 /* eslint-disable react/prop-types */
-const SampleImg = ({ src, name, index, aspect }) => {
+const SampleImg = ({ src, name, aspect }) => {
   const [isLoading, setIsLoading] = useState(true);
 
   const handleLoad = () => {
@@ -17,7 +17,7 @@ const SampleImg = ({ src, name, index, aspect }) => {
         className={`${
           isLoading ? "hidden" : "block"
         } ${aspect} h-[8rem] sm:h-48 lg:h-80`}
-        loading={`${index > 2 ? "lazy" : "eager"}`}
+        loading="eager"
       />
       <img
         className={`animate-pulse ${aspect} h-[8rem] sm:h-48 lg:h-80 bg-slate-950 rounded-lg fadeOut border-2 ${

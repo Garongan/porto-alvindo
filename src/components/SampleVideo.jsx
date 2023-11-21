@@ -1,10 +1,11 @@
 import { useEffect } from "react";
 import { useState } from "react";
+import Youtube from 'react-youtube'
 
 /* eslint-disable react/prop-types */
 const SampleVideo = ({ src }) => {
   const [isNull, setIsNull] = useState(false);
-
+  
   useEffect(() => {
     if (src == null) setIsNull(true);
   }, [src]);
@@ -15,13 +16,7 @@ const SampleVideo = ({ src }) => {
           isNull ? "hidden" : "block"
         }`}
       >
-        <iframe
-          src={src}
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-          className="aspect-video lg:w-1/2 w-full rounded-lg"
-        />
+        <Youtube videoId={src} className="aspect-video rounded-lg" />
       </div>
     </>
   );
