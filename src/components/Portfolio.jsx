@@ -23,7 +23,7 @@ const Portfolio = ({ data, isLoadApi, scrollToSection }) => {
         {isLoadApi ? (
           <div className="bg-slate-900 animate-pulse w-full h-screen rounded-lg fadeOut"></div>
         ) : (
-          <div className="flex flex-col gap-4 bg-slate-900/50 p-6 rounded-lg">
+          <div className="flex flex-col gap-4">
             <PortoItems data={currentItems} />
             <ReactPaginate
               breakLabel="..."

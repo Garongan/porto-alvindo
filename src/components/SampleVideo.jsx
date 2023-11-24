@@ -20,7 +20,7 @@ const SampleVideo = ({ src }) => {
 
   const VideoPlayer = () => {
     return (
-      <div className="rounded-lg mx-auto p-4 mb-4 bg-slate-900">
+      <div className="sm:max-w-2xl mx-auto sm:mt-4 sm:mb-0 mb-4">
         {isOpen ? (
           <ViewButton />
         ) : (
@@ -29,7 +29,11 @@ const SampleVideo = ({ src }) => {
               <XCircle />
             </button>
             <div className="w-full">
-              <Youtube videoId={src} opts={opts} className="aspect-video" />
+              <Youtube
+                videoId={src}
+                opts={opts}
+                className="aspect-video"
+              />
             </div>
           </>
         )}
@@ -39,10 +43,7 @@ const SampleVideo = ({ src }) => {
 
   const ViewButton = () => {
     return (
-      <button
-        className="relative rounded-lg bg-slate-900"
-        onClick={handleCLick}
-      >
+      <button className="relative bg-slate-900" onClick={handleCLick}>
         <img
           src={`https://img.youtube.com/vi/${src}/maxresdefault.jpg`}
           alt="youtube-tumbnail"
