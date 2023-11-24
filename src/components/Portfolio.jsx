@@ -32,7 +32,7 @@ const Portfolio = ({ data, isLoadApi, scrollToSection }) => {
               marginPagesDisplayed={2}
               pageCount={pageCount}
               renderOnZeroPageCount={null}
-              activeClassName="bg-slate-950 px-2 py-1 rounded-md"
+              activeClassName="bg-slate-900 px-2 py-1 rounded-md"
               pageClassName="hover:bg-slate-900 px-2 py-1 rounded-md"
               nextClassName="hover:bg-slate-900 px-2 py-1 rounded-md"
               previousClassName="hover:bg-slate-900 px-2 py-1 rounded-md"
