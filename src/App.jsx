@@ -29,7 +29,7 @@ function App() {
   };
 
   return (
-    <>
+    <div className="min-h-screen">
       <section id="overview">
         <Header scrollToSection={scrollToSection} />
         <Overview />
@@ -44,7 +44,7 @@ function App() {
         />
       </section>
       <Footer />
-    </>
+    </div>
   );
 }
 
