@@ -10,7 +10,7 @@ const PortoItems = ({ data }) => {
       {data.map((item, index) => (
         <div key={index} className="sm:bg-slate-800 sm:rounded-lg">
           <SampleVideo src={item.youtube} />
-          <div className="bg-slate-800 p-4 rounded-lg fadeIn">
+          <div className="bg-slate-800 sm:p-8 p-4 rounded-lg fadeIn">
             <div className="flex flex-row justify-start gap-2 sm:justify-around sm:gap-0 overflow-x-auto sm:overflow-hidden">
               <SampleImg
                 src={item.imgDekstop}

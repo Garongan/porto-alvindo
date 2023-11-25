@@ -20,12 +20,12 @@ const SampleVideo = ({ src }) => {
 
   const VideoPlayer = () => {
     return (
-      <div className="sm:max-w-2xl mx-auto sm:mt-4 sm:mb-0 mb-4">
+      <div className="max-w-full sm:p-8 mx-auto sm:mb-0 mb-4">
         {isOpen ? (
           <ViewButton />
         ) : (
-          <>
-            <button className="fixed -top-3 -right-3" onClick={handleCLick}>
+          <div className="relative">
+            <button className="absolute -top-3 -right-3" onClick={handleCLick}>
               <XCircle />
             </button>
             <div className="w-full">
@@ -35,7 +35,7 @@ const SampleVideo = ({ src }) => {
                 className="aspect-video"
               />
             </div>
-          </>
+          </div>
         )}
       </div>
     );
