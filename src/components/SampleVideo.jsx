@@ -20,7 +20,7 @@ const SampleVideo = ({ src }) => {
 
   const VideoPlayer = () => {
     return (
-      <div className="max-w-full sm:p-8 mx-auto sm:mb-0 mb-4">
+      <div className="w-full sm:p-8 mx-auto sm:mb-0 mb-4 flex justify-center">
         {isOpen ? (
           <ViewButton />
         ) : (

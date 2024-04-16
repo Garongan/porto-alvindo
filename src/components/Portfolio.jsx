@@ -7,7 +7,7 @@ const Portfolio = ({ data, isLoadApi, scrollToSection }) => {
   const itemsPerPage = 3;
   const [itemOffset, setItemOffset] = useState(0);
   const endOffset = itemOffset + itemsPerPage;
-  const currentItems = data.slice(itemOffset, endOffset);
+  const currentItems = data.filter((item) => item.name !== "").slice(itemOffset, endOffset);
   const pageCount = Math.ceil(data.length / itemsPerPage);
 
   const handlePageClick = (event) => {
