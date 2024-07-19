@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
-    <div className="bg-slate-900 flex">
+    <div className="bg-teal-100 dark:bg-teal-950 flex">
       <div className="mx-auto container py-6 px-8">
-        <ul className="grid grid-flow-row md:grid-flow-col pb-6 small text-light list-disc list-inside">
+        <ul className="list-none grid grid-flow-row md:grid-flow-col pb-6 small text-light list-disc list-inside">
           <div className="w-4/5 md:w-full">
             <li>Alamat: Lowokwaru, Malang</li>
             <li>Instagram: @alvindotri.j</li>

@@ -14,14 +14,14 @@ const Power = ({ power }) => {
 
     return (
         <div className="py-6">
-            <div className="text-3xl container mx-auto px-8">My Power</div>
-            <div className="bg-slate-900/50 my-6">
+            <div className="text-xl md:text-2xl font-medium container mx-auto px-8">My Power</div>
+            <div className="bg-teal-100 dark:bg-teal-950 my-6">
                 {isLoading ? (
-                    <Marquee pauseOnHover gradient gradientColor="#020617" autoFill>
+                    <Marquee pauseOnHover autoFill>
                         {power.map((item, index) => {
                             return (
                                 <div
-                                    className="bg-slate-950 m-4 uppercase text-md rounded-lg p-3 hover:underline shadow-lg transition-shadow hover:shadow-lg-dark"
+                                    className="bg-teal-300 dark:bg-stone-900 m-4 uppercase text-md rounded-lg p-3 hover:underline shadow-none transition-shadow hover:shadow-md dark:hover:shadow-md-dark hover:cursor-pointer"
                                     key={index}
                                 >
                                     {item}
@@ -34,7 +34,7 @@ const Power = ({ power }) => {
                         {item.map((index) => {
                             return (
                                 <div
-                                    className="animate-pulse bg-slate-950 uppercase text-md rounded-lg p-3 hover:underline shadow-lg transition-shadow hover:shadow-lg-dark"
+                                    className="animate-pulse bg-slate-950 uppercase text-md rounded-lg p-3 hover:underline shadow-md transition-shadow dark:hover:shadow-md-dark"
                                     key={index}
                                 >
                                     power
