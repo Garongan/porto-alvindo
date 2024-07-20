@@ -11,14 +11,14 @@ const Overview = () => {
 
 	return (
 		<div className="container mx-auto pb-6 pt-24">
-			<div className="flex flex-col md:flex-row items-center justify-center divide-y md:divide-x md:divide-y-0">
+			<div className="flex flex-col sm:flex-row md:flex-row items-center justify-center divide-y md:divide-x sm:divide-y-0">
 				<div className="basis-full p-6 flex justify-end">
 					<img
 						src="profile.webp"
 						alt="profile"
 						className={ `${
 							isLoading ? "hidden" : "block"
-						} rounded-full object-cover w-72 h-72 shadow-md dark:shadow-md-dark brightness-90` }
+						} rounded-full object-cover w-full md:w-72 shadow-md dark:shadow-md-dark brightness-90` }
 						onLoad={ handleLoad }
 						loading="eager"
 					/>

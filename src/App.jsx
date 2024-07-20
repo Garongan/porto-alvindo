@@ -12,14 +12,6 @@ function App() {
 	const [ data, setData ] = useState([]);
 	const [ isLoadApi, setIsLoadApi ] = useState(true);
 
-	useEffect(() => {
-		fetchData().then((response) => {
-			const reversedItems = response.slice().reverse();
-			setData(reversedItems);
-			setIsLoadApi(false);
-		});
-	}, []);
-
 	const scrollToSection = (targetSection) => {
 		const section = document.getElementById(targetSection);
 		if (section) {
@@ -27,8 +19,21 @@ function App() {
 		}
 	};
 
+	useEffect(() => {
+		fetchData().then((response) => {
+			const reversedItems = response.slice().reverse();
+			setData(reversedItems);
+			setIsLoadApi(false);
+		});
+		if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+			document.documentElement.classList.add("dark");
+		} else {
+			document.documentElement.classList.remove("dark");
+		}
+	}, []);
+
 	return (
-		<div className="min-h-screen bg-stone-50 dark:bg-stone-900">
+		<div className="min-h-screen max-w-screen overflow-hidden text-stone-900 bg-stone-50 dark:text-stone-50 dark:bg-stone-900">
 			<section id="overview">
 				<Header scrollToSection={ scrollToSection }/>
 				<Overview/>
