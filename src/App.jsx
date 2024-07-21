@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Overview from "./components/Overview";
 import Portfolio from "./components/Portfolio";
-import Power from "./components/Power";
+import Skills from "./components/Skills.jsx";
 import {fetchData} from "./services/api";
 
 function App() {
@@ -38,7 +38,7 @@ function App() {
 				<Header scrollToSection={ scrollToSection }/>
 				<Overview/>
 				<BreakSection/>
-				<Power power={ data.map((item) => item.power) }/>
+				<Skills power={ data.map((item) => item.power) }/>
 			</section>
 			<section id="portofolio">
 				<Portfolio

@@ -57,7 +57,7 @@ const SampleVideo = ({ src }) => {
     );
   };
 
-  return src != null && <VideoPlayer />;
+  return src !== "" && <VideoPlayer />;
 };
 
 export default SampleVideo;
