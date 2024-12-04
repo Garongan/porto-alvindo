@@ -33,9 +33,9 @@ const Portfolio = ({ data, isLoadApi, scrollToSection }) => {
 							pageCount={ pageCount }
 							renderOnZeroPageCount={ null }
 							activeClassName="bg-teal-300 dark:bg-teal-950 px-2 py-1 rounded-md"
-							pageClassName="hover:bg-teal-300 dark:bg-teal-950 px-2 py-1 rounded-md"
-							nextClassName="hover:bg-teal-300 dark:bg-teal-950 px-2 py-1 rounded-md"
-							previousClassName="hover:bg-teal-300 dark:bg-teal-950 px-2 py-1 rounded-md"
+							pageClassName="hover:bg-teal-300 dark:hover:bg-teal-950 px-2 py-1 rounded-md"
+							nextClassName="hover:bg-teal-300 dark:hover:bg-teal-950 px-2 py-1 rounded-md"
+							previousClassName="hover:bg-teal-300 dark:hover:bg-teal-950 px-2 py-1 rounded-md"
 							className="flex justify-center gap-2 items-center flex-wrap"
 						/>
 					</div>
