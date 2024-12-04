@@ -30,11 +30,10 @@ const Overview = () => {
 			<div className="basis-full p-6 flex justify-start">
 				<div className="w-72 h-72 bg-teal-100 dark:bg-teal-950 rounded-lg p-4 flex flex-col justify-between">
 					<div className="text-xl font-medium py-3">
-						FullStack Developer
+						Frontend Developer
 					</div>
 					<div className="text-base">
-						Work as team, fast response, strong will, and hard worker.
-						Developing Web App, Rest API, and Mobile Apps
+						I’m programmer with strong will, write clean code, maintainable, and implement the clean architecture, Work as team, fast response, and hard worker.
 					</div>
 					<RedirectButton
 						url={ "https://github.com/Garongan" }
