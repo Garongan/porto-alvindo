@@ -57,7 +57,7 @@ const SampleVideo = ({ src }) => {
     );
   };
 
-  return src !== "" && <VideoPlayer />;
+  return (src !== "" && src !== undefined) && <VideoPlayer />;
 };
 
 export default SampleVideo;
