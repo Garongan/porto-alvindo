@@ -1,18 +1,18 @@
 "use client";
 
-import Link from "next/link";
 import Image from 'next/image';
+import Link from "next/link";
 import { useState } from "react";
 
 import { ExternalLink } from "lucide-react";
 
 import {
     Dialog,
-    DialogTitle,
-    DialogHeader,
-    DialogTrigger,
     DialogContent,
-    DialogDescription
+    DialogDescription,
+    DialogHeader,
+    DialogTitle,
+    DialogTrigger
 } from "@/components/ui/dialog";
 
 
@@ -56,9 +56,10 @@ export const JobImages = ({
                             <Image 
                                 width={400}
                                 height={400}
+                                sizes='1'
                                 src={selectedImage || ""}
                                 alt={`Project Image for ${role}`}
-                                className="rounded-md border shadow-md object-cover"
+                                className="rounded-md border shadow-md object-cover w-full h-auto"
                             />
                             <Link href={link} target="_blank" className="text-sm flex items-center justify-center text-blue-600 hover:underline mt-2">
                                 Visit Company Site

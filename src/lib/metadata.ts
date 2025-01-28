@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 
 export function constructMetadata({
   title = 'Alvindo Jatmiko', // TODO: Add a custom title
-  description = "I am a software engineer with a passion for building scalable and efficient web applications.", // TODO: Add a custom description
+  description = "I’m programmer with strong will to create clean code and implement the clean architecture, Work as team, fast response, and hardworker.", // TODO: Add a custom description
   image = '/thumbnail.png', // TODO: Add a custom image
   icons = '/avatar.jpg', // TODO: Add a custom icon
   noIndex = false
@@ -21,22 +21,15 @@ export function constructMetadata({
     openGraph: {
       title,
       description,
-      images: [image]
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title,
-      description,
       images: [image],
-      creator: '@chrislonzo'
     },
     icons,
-    metadataBase: new URL('https://www.chrislonzo.com'),
+    metadataBase: new URL('https://porto-alvindo.vercel.app/'),
     ...(noIndex && {
       robots: {
         index: false,
-        follow: false
-      }
-    })
-  }
+        follow: false,
+      },
+    }),
+  };
 }

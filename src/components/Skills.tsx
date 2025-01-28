@@ -1,31 +1,6 @@
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-// TODO: Update skills
-const skills = [
-  'TypeScript',
-  'JavaScript',
-  'Python',
-  'Java',
-  'C#',
-  'C++',
-  'C',
-  'SQL',
-  'HTML',
-  'CSS',
-  'TailwindCSS',
-  'NextJS',
-  'ReactJS',
-  'NodeJS',
-  'ExpressJS',
-  'MongoDB',
-  'PostgreSQL',
-  'Git',
-  'Docker',
-  'Kubernetes',
-  'Linux',
-  'Windows',
-  'MacOS',
-];
+import { skills } from '@/static/skills';
 
 export const Skills = () => {
   return (
