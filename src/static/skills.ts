@@ -1,4 +1,3 @@
-// TODO: Update skills
 export const skills = [
   'Java',
   'PHP',
@@ -15,15 +14,19 @@ export const skills = [
   'Spring Boot',
   'Laravel',
   'Gin',
+  'Express',
   'Fiber',
   'Postman',
   'React',
   'React Native',
-  'NodeJs',
+  'Node.Js',
   'Vite',
-  'NextJs',
+  'Next.Js',
   'Expo',
   'Flutter',
   'Tailwind CSS',
-  'Bootstrap CSSZ'
+  'Bootstrap CSS',
+  'Wordpress',
+  'Elementor'
+  // TODO: Update skills
 ];
