@@ -1,4 +1,6 @@
 export const skills = [
+  'Swift',
+  'Swift UI',
   'Java',
   'PHP',
   'Go',
@@ -28,5 +30,4 @@ export const skills = [
   'Bootstrap CSS',
   'Wordpress',
   'Elementor'
-  // TODO: Update skills
 ];

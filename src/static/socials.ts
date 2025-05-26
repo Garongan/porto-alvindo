@@ -8,7 +8,7 @@ export const socials = [
   },
   {
     name: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/alvindo-jatmiko-3848441b8',
+    link: 'https://www.linkedin.com/in/alvindo-jatmiko',
     icon: FaLinkedin,
   },
   // TODO: Add more socials here

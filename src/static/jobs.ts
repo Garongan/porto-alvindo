@@ -78,5 +78,20 @@ export const jobs: Job[] = [
       },
     ],
   },
-  // TODO: Add new job experience here
+  {
+    role: 'Intern - iOS Developer',
+    company: 'Apple Developer Academy',
+    logo: '/logos/apple-logo.png',
+    duration: 'March 2025 - Present',
+    description:
+      'Develop app for iOS',
+    skills: [
+      'Swift',
+      'Swift UI'
+    ],
+    projects: [
+      
+    ],
+  },
+  
 ];
