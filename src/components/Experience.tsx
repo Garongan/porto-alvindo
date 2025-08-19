@@ -12,7 +12,7 @@ export const Experience = () => {
   return (
     <>
       <h2 className='text-xl font-bold mb-4 text-black dark:text-white'>
-        Work Experience
+        Experience
       </h2>
       <Card>
         <CardContent className='pt-6'>
@@ -52,7 +52,7 @@ export const Experience = () => {
                   duration={j.duration}
                 />
               </li>
-            ))}
+            )).reverse()}
           </ul>
         </CardContent>
       </Card>
