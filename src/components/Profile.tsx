@@ -21,7 +21,7 @@ export const Profile = () => {
                 width={150}
                 height={150}
                 quality={100}
-                src='/avatar.jpg'
+                src='/avatar1.jpg'
                 alt='Profile Picture'
                 className='rounded-full size-12 md:w-full h-auto object-cover border-2'
                 priority
@@ -31,7 +31,7 @@ export const Profile = () => {
                   Alvindo Tri Jatmiko
                 </h1>
                 <p className='text-sm md:text-base text-muted-foreground'>
-                  Fullstack Developer
+                  Mobile Developer
                 </p>
               </div>
             </div>

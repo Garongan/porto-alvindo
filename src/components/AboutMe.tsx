@@ -13,8 +13,8 @@ export const AboutMe = () => {
       </CardHeader>
       <CardContent>
         <p className='text-muted-foreground'>
-          {/* Write 1-2 sentences about yourself */}I am a software engineer
-          with a passion for building scalable and efficient web applications.
+          {/* Write 1-2 sentences about yourself */}
+          Proficient Mobile Developer with approximately one year of experience in both native and cross-platform development. Skilled in Flutter, React Native, and SwiftUI. Contributed to the successful launch of an iOS application on TestFlight, employing a robust architectural design approach known as Clean Architecture. 
         </p>
       </CardContent>
     </Card>
