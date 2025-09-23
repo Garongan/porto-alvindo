@@ -62,7 +62,7 @@ export const Experience = () => {
                       </p>
                     </div>
                   </div>
-                  <div className='flex flex-wrap gap-2 sm:justify-end'>
+                  <div className='h-5 flex flex-wrap gap-2 sm:justify-end'>
                     {highlightedSkills.map((skill) => (
                       <Badge
                         key={skill}
