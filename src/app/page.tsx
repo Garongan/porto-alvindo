@@ -1,25 +1,22 @@
 import { AboutMe } from "@/components/AboutMe";
 import { Experience } from "@/components/Experience";
+import { Profile } from "@/components/Profile";
 import { Projects } from "@/components/Projects";
-import { Sidebar } from "@/components/Sidebar";
+import { Skills } from "@/components/Skills";
 
 export default function Home() {
   return (
-    <div className="bg-background min-h-screen">
-      <div className="container max-w-screen-lg mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* (Profile and Skills) Sidebar Section */}
-          <Sidebar />
-          {/* Main Section */}
-          <main className="md:col-span-2">
-            {/* About Me Section */}
-            <AboutMe />
-            {/* Projects Section */}
-            <Projects />
-            {/* Experience Section */}
-            <Experience />
-          </main>
+    <div className="relative min-h-screen overflow-hidden bg-background">
+      <div className="container relative mx-auto max-w-screen-xl px-4 py-10 sm:py-16 lg:px-8 flex flex-col gap-6">
+        <div className="flex flex-col lg:flex-row gap-6">
+          <Profile />
+          <Skills/>
         </div>
+        <main className="flex flex-col gap-6 lg:gap-6">
+          <AboutMe />
+          <Projects />
+          <Experience />
+        </main>
       </div>
     </div>
   );

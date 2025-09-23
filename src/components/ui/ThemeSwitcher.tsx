@@ -1,16 +1,16 @@
 'use client';
 
+import { useTheme } from "@/context/ThemeContext";
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
-import { useTheme } from "@/context/ThemeContext";
 
 
-import {
-  SunIcon,
-  MoonIcon,
-  Half2Icon,
-} from "@radix-ui/react-icons";
 import * as DropdownMenuPrimitive from "@radix-ui/react-dropdown-menu";
+import {
+  Half2Icon,
+  MoonIcon,
+  SunIcon,
+} from "@radix-ui/react-icons";
 
 
 // Theme options

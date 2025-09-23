@@ -1,16 +1,16 @@
-import Link from 'next/link';
 import type { Metadata } from "next";
+import Link from 'next/link';
 
 import { ArrowLeft } from 'lucide-react';
 
+import { Button } from '@/components/ui/button';
 import {
   Card,
-  CardTitle,
+  CardContent,
   CardFooter,
   CardHeader,
-  CardContent
+  CardTitle
 } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
     title: '404 - Page Not Found',

@@ -5,7 +5,7 @@ import { Metadata } from 'next'
 export function constructMetadata({
   title = 'Alvindo Jatmiko', // TODO: Add a custom title
   description = "I’m programmer with strong will to create clean code and implement the clean architecture, Work as team, fast response, and hardworker.", // TODO: Add a custom description
-  image = '/thumbnail.png', // TODO: Add a custom image
+  // image = '/thumbnail.png', // TODO: Add a custom image
   icons = '/avatar.jpg', // TODO: Add a custom icon
   noIndex = false
 }: {
@@ -21,7 +21,7 @@ export function constructMetadata({
     openGraph: {
       title,
       description,
-      images: [image],
+      // images: [image],
     },
     icons,
     metadataBase: new URL('https://porto-alvindo.vercel.app/'),

@@ -1,14 +1,9 @@
-import { Profile } from "./Profile";
-import { Skills } from "./Skills";
-
+import { Skills } from './Skills';
 
 export const Sidebar = () => {
-    return (
-        <aside className="md:col-span-1">
-            {/* Profile Section */}
-            < Profile />
-            {/* Skills Section */}
-            <Skills />
-        </aside>
-    )
-}
+  return (
+    <aside className='flex flex-col gap-6 lg:sticky lg:top-12 lg:h-max'>
+      <Skills />
+    </aside>
+  );
+};
