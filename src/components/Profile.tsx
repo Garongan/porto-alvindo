@@ -16,7 +16,7 @@ export const Profile = () => {
   return (
     <Card className='relative overflow-hidden border border-border/60 bg-background/60 shadow-lg backdrop-blur'>
       <CustomBackground />
-      <div className='absolute top-5 end-5'>
+      <div className='absolute top-5 end-5 z-10'>
         <ThemeSwitcher />
       </div>
       <CardContent className='relative flex flex-col gap-8 p-6 md:p-8'>

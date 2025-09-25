@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image';
 
 import { BriefcaseBusiness, CalendarDays } from 'lucide-react';
@@ -5,14 +7,18 @@ import { BriefcaseBusiness, CalendarDays } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 import { JobImages } from '@/components/JobImages';
+import useMediaQuery from '@/hook/useMediaQuery';
 import { jobs } from '@/static/jobs';
 import { Badge } from './ui/badge';
+import { CustomBackground } from './ui/customBackground';
 
 export const Experience = () => {
   const timeline = [...jobs].reverse();
+  const isDesktopOrLaptop = useMediaQuery('(min-width: 1224px)');
 
   return (
     <section className='flex flex-col gap-6'>
+      <CustomBackground />
       <div>
         <span className='text-xs font-semibold uppercase tracking-[0.3em] text-muted-foreground'>
           Career journey
@@ -25,16 +31,16 @@ export const Experience = () => {
         <CardContent className='relative flex flex-col gap-10 pt-10'>
           <div
             aria-hidden
-            className='absolute left-6 top-10 bottom-10 hidden w-px bg-border/60 md:block'
+            className='absolute left-9 top-11 bottom-10 hidden w-px bg-border/60 md:block'
           />
           {timeline.map((job, index) => {
-            const highlightedSkills = job.skills.slice(0, 4);
+            const highlightedSkills = job.skills.slice(0, isDesktopOrLaptop ? 4 : 3);
             const remainingSkillCount = job.skills.length - highlightedSkills.length;
 
             return (
               <article
                 key={job.role + index}
-                className='relative flex flex-col gap-4 border-b border-border/40 pb-10 last:border-none last:pb-0 md:pl-12'
+                className='relative flex flex-col gap-4 pb-10 last:border-none last:pb-0 md:pl-12'
               >
                 <div className='absolute -left-1 top-1 hidden size-8 items-center justify-center rounded-full border border-primary/50 bg-background/80 text-primary md:flex'>
                   <BriefcaseBusiness className='size-4' />
