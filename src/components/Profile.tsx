@@ -21,7 +21,7 @@ export const Profile = () => {
       </div>
       <CardContent className='relative flex flex-col gap-8 p-6 md:p-8'>
         <div className='flex flex-col gap-6'>
-          <div className='flex flex-col gap-6 md:flex-row md:items-center md:gap-8'>
+          <div className='flex flex-col gap-6 xl:flex-row md:items-center'>
             <div className='relative mx-auto flex-shrink-0 md:mx-0'>
               <Image
                 width={150}
@@ -39,8 +39,8 @@ export const Profile = () => {
                   Alvindo Tri Jatmiko
                 </h1>
                 <Badge
-                  variant='secondary'
-                  className='mx-auto w-fit px-3 py-1 text-[0.7rem] uppercase tracking-[0.25em] sm:mx-0'
+                  variant='outline'
+                  className='px-3 py-1 text-[0.7rem] uppercase tracking-[0.25em] sm:mx-0'
                 >
                   Mobile Developer
                 </Badge>

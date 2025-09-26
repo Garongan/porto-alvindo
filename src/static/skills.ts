@@ -1,33 +1,40 @@
-export const skills = [
-  'Swift',
-  'Swift UI',
-  'Java',
-  'PHP',
-  'Go',
-  'JavaScript',
-  'TypeScript',
-  'Dart',
-  'MySQL',
-  'PostgreSQL',
-  'HTML',
-  'CSS',
-  'Git',
-  'Github',
-  'Spring Boot',
-  'Laravel',
-  'Gin',
-  'Express',
-  'Fiber',
-  'Postman',
-  'React',
-  'React Native',
-  'Node.Js',
-  'Vite',
-  'Next.Js',
-  'Expo',
-  'Flutter',
-  'Tailwind CSS',
-  'Bootstrap CSS',
-  'Wordpress',
-  'Elementor'
+export type SkillCategory = {
+  label: string;
+  skills: string[];
+};
+
+export const skillCategories: SkillCategory[] = [
+  {
+    label: 'Mobile',
+    skills: ['Swift', 'Swift UI', 'Dart', 'React Native', 'Expo', 'Flutter'],
+  },
+  {
+    label: 'Web',
+    skills: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'TypeScript',
+      'React',
+      'Next.Js',
+      'Vite',
+      'Tailwind CSS',
+      'Bootstrap CSS',
+      'Wordpress',
+      'Elementor',
+    ],
+  },
+  {
+    label: 'Backend',
+    skills: ['PHP', 'Go', 'Java', 'Node.Js', 'Laravel', 'Spring Boot', 'Gin', 'Express', 'Fiber'],
+  },
+  {
+    label: 'Tools',
+    skills: ['MySQL', 'PostgreSQL', 'Git', 'Github', 'Postman'],
+  },
 ];
+
+export const totalSkills = skillCategories.reduce(
+  (count, category) => count + category.skills.length,
+  0,
+);

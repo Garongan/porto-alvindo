@@ -21,6 +21,11 @@ export type project = {
   link: string;
 };
 
+export type ProjectGroup = {
+  label: string;
+  projects: project[];
+};
+
 export type JobImagesProps = {
   role: string;
   projects: projects[];

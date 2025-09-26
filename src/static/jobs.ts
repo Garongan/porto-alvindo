@@ -6,7 +6,8 @@ export const jobs: Job[] = [
     company: 'Faculty of Computer Science (FILKOM) University of Brawijaya',
     logo: '/logos/filkom-logo.png',
     duration: 'July 2022 - January 2023',
-    description: 'Manage and evaluate website using wordpress',
+    description:
+      'Managed and optimized the faculty website on WordPress, ensuring uptime, responsiveness, and content accuracy',
     skills: ['PHP', 'Wordpress', 'Elementor'],
     projects: [
       {
@@ -22,7 +23,7 @@ export const jobs: Job[] = [
     logo: '/logos/coding-go-logo.jpg',
     duration: 'February 2023 - June 2023',
     description:
-      'Developed custom content management system website with laravel',
+      'Delivered a Laravel-based CMS with end-to-end feature development across frontend and backend',
     skills: [
       'PHP',
       'Javascript',
@@ -47,7 +48,7 @@ export const jobs: Job[] = [
     logo: '/logos/enigma-camp-logo.ico',
     duration: 'January 2024 - January 2025',
     description:
-      'Database schema designer, develop website, building api, and create multiplatform application',
+      'Designed relational schemas, implemented production-ready APIs, and supported cross-platform application delivery',
     skills: [
       'Java',
       'Go',
@@ -84,7 +85,7 @@ export const jobs: Job[] = [
     logo: '/logos/apple-logo.png',
     duration: 'March 2025 - Present',
     description:
-      'Develop app for iOS',
+      'Engineering native iOS applications with Swift and SwiftUI in a multidisciplinary product team',
     skills: [
       'Swift',
       'Swift UI'
