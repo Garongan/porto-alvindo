@@ -30,14 +30,16 @@ export const ProjectCard = ({
         <Badge className='rounded-full bg-primary/10 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-primary'>
           {formatCaseNumber(caseNumber)}
         </Badge>
-        <Link
-          href={project.link}
-          target='_blank'
-          rel='noopener noreferrer'
-          className='rounded-full border border-border/50 bg-background/60 p-2 text-muted-foreground transition-colors hover:border-primary/40 hover:text-primary'
-        >
-          <ExternalLink className='size-4' />
-        </Link>
+        {
+          project.link != "" && <Link
+            href={project.link}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='rounded-full border border-border/50 bg-background/60 p-2 text-muted-foreground transition-colors hover:border-primary/40 hover:text-primary'
+          >
+            <ExternalLink className='size-4' />
+          </Link>
+        }
       </div>
 
       <div className='flex flex-col gap-2'>

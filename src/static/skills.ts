@@ -30,7 +30,7 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     label: 'Tools',
-    skills: ['MySQL', 'PostgreSQL', 'Git', 'Github', 'Postman'],
+    skills: ['MySQL', 'PostgreSQL', 'Git', 'Github', 'Postman', 'Jira'],
   },
 ];
 

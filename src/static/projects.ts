@@ -64,7 +64,45 @@ export const projects: project[] = [
     ],
     link: 'https://github.com/Garongan/frontend-sistem-pengelolaan-iuran',
   },
-  // TODO: Add project
+  {
+    title: 'Restaurant App',
+    description: "Flutter app to display list of restaurant, favourite, and it's review. Also reminder to take a launch",
+    techs: ['Dart', 'Git', 'Github', 'Flutter'],
+    link: ""
+  },
+  {
+    title: 'Story App',
+    description: "Flutter app to create story based on image and it's location",
+    techs: ['Dart', 'Git', 'Github', 'Flutter'],
+    link: ""
+  },
+  {
+    title: 'Timesheet App',
+    description:
+      'Spring Boot timesheet service that handles project allocations, overtime approvals, and payroll exports',
+    techs: ['Java', 'Spring Boot', 'PostgreSQL', 'Git', 'Github', 'Postman'],
+    link: 'https://documenter.getpostman.com/view/30958942/2sAXjSz9Fs',
+  },
+  {
+    title: 'GripIn',
+    description:
+      'iOS hand therapy app that blends CoreML gesture recognition, live camera feedback, and one-handed navigation to support wrist injury recovery',
+    techs: ['Swift', 'Swift UI', 'CoreML', 'Vision', 'CreateML', 'Git', 'Github'],
+    link: 'https://testflight.apple.com/join/nAHKmuTT',
+  },
+  {
+    title: 'DuckyDive',
+    description: 'A Game that you must to control the duck eat bread and avoid the tiger',
+    techs: ['Swift', 'Swift UI', 'Reality Kit', 'Git', 'Github'],
+    link: 'https://testflight.apple.com/join/g6YcySwX'
+  },
+  {
+    title: 'Ciputra Golf Mobile Application',
+    description:
+      'Driving-range ordering app for Ciputra Golf where I led the SwiftUI build and Supabase integration to deliver real-time, streamlined service for players and staff.',
+    techs: ['Swift', 'Swift UI', 'Supabase', 'Supabase Client', 'Jira'],
+    link: 'https://testflight.apple.com/join/n4K1K5X7'
+  }
 ];
 
 const normalize = (value: string) => value.trim().toLowerCase();
