@@ -2,7 +2,26 @@ import { skillCategories } from './skills';
 import { ProjectGroup, project } from './types';
 
 export const projects: project[] = [
-  // START: FEATURED PROJECTS
+  {
+    title: 'GripIn',
+    description:
+      'iOS hand therapy app that blends CoreML gesture recognition, live camera feedback, and one-handed navigation to support wrist injury recovery',
+    techs: ['Swift', 'Swift UI', 'CoreML', 'Vision', 'CreateML', 'Git', 'Github'],
+    link: 'https://testflight.apple.com/join/nAHKmuTT',
+  },
+  {
+    title: 'DuckyDive',
+    description: 'A Game that you must to control the duck eat bread and avoid the tiger',
+    techs: ['Swift', 'Swift UI', 'Reality Kit', 'Git', 'Github'],
+    link: 'https://testflight.apple.com/join/g6YcySwX'
+  },
+  {
+    title: 'Ciputra Golf Mobile Application',
+    description:
+      'Driving-range ordering app for Ciputra Golf where I led the SwiftUI build and Supabase integration to deliver real-time, streamlined service for players and staff.',
+    techs: ['Swift', 'Swift UI', 'Supabase', 'Supabase Client', 'Jira'],
+    link: 'https://testflight.apple.com/join/n4K1K5X7'
+  },
   {
     title: 'Image Gallery',
     description:
@@ -39,7 +58,6 @@ export const projects: project[] = [
     techs: ['Dart', 'Git', 'Github', 'Flutter'],
     link: 'https://github.com/Garongan/li_fashion',
   },
-  // END: FEATURED PROJECTS
   {
     title: 'Backend Sistem Pengelolaan Iuran',
     description:
@@ -82,26 +100,6 @@ export const projects: project[] = [
       'Spring Boot timesheet service that handles project allocations, overtime approvals, and payroll exports',
     techs: ['Java', 'Spring Boot', 'PostgreSQL', 'Git', 'Github', 'Postman'],
     link: 'https://documenter.getpostman.com/view/30958942/2sAXjSz9Fs',
-  },
-  {
-    title: 'GripIn',
-    description:
-      'iOS hand therapy app that blends CoreML gesture recognition, live camera feedback, and one-handed navigation to support wrist injury recovery',
-    techs: ['Swift', 'Swift UI', 'CoreML', 'Vision', 'CreateML', 'Git', 'Github'],
-    link: 'https://testflight.apple.com/join/nAHKmuTT',
-  },
-  {
-    title: 'DuckyDive',
-    description: 'A Game that you must to control the duck eat bread and avoid the tiger',
-    techs: ['Swift', 'Swift UI', 'Reality Kit', 'Git', 'Github'],
-    link: 'https://testflight.apple.com/join/g6YcySwX'
-  },
-  {
-    title: 'Ciputra Golf Mobile Application',
-    description:
-      'Driving-range ordering app for Ciputra Golf where I led the SwiftUI build and Supabase integration to deliver real-time, streamlined service for players and staff.',
-    techs: ['Swift', 'Swift UI', 'Supabase', 'Supabase Client', 'Jira'],
-    link: 'https://testflight.apple.com/join/n4K1K5X7'
   }
 ];
 
