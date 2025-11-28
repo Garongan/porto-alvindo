@@ -3,6 +3,13 @@ import { ProjectGroup, project } from './types';
 
 export const projects: project[] = [
   {
+    title: 'KeySense',
+    description:
+      'KeySense help musicians and singers quickly identify the key of any song.',
+    techs: ['Swift', 'Swift UI', 'AVAudio', 'Parabolic Algorithm', 'Git', 'Github'],
+    link: 'https://apps.apple.com/id/app/keysense/id6754688749',
+  },
+  {
     title: 'GripIn',
     description:
       'iOS hand therapy app that blends CoreML gesture recognition, live camera feedback, and one-handed navigation to support wrist injury recovery',
