@@ -1,10 +1,14 @@
 export const profile = {
   name: "Alvindo Tri Jatmiko",
-  title: "Mobile Developer — Flutter & SwiftUI",
+  title: "iOS Developer",
   summary:
-    "Saya membangun aplikasi mobile yang bersih, testable, dan scalable—dengan Clean Architecture, state management yang rapi, serta CI/CD sampai TestFlight/App Store.",
-  email: "alvindo56@gmail.com",
-  phone: "+62 89-990-151-03",
-  location: "Indonesia (WIB)",
-  resumeUrl: "/resume-alvindo.pdf"
+    "Focused on crafting high-quality, maintainable apps with clean architecture, consistent delivery, and delightful user experiences.",
+  email: "mailto:alvindo56@gmail.com",
+  phone: "https://wa.me/+628999015103",
+  resumeUrl: "/cv-alvindo.pdf",
+  specialties: [
+    "Cross-platform builds",
+    "Team-driven mindset",
+    "Remote collaboration"
+  ]
 };

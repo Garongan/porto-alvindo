@@ -5,8 +5,9 @@ import Link from 'next/link';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { profile } from '@/static/profile';
 import { socials } from '@/static/socials';
-import { FaWhatsapp } from 'react-icons/fa';
+import { FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 import { MdOutlineFileDownload } from 'react-icons/md';
 import { CustomBackground } from './ui/customBackground';
 import ThemeSwitcher from './ui/ThemeSwitcher';
@@ -42,30 +43,30 @@ export const Profile = () => {
                   variant='outline'
                   className='px-3 py-1 text-[0.7rem] uppercase tracking-[0.25em] sm:mx-0'
                 >
-                  Mobile Developer
+                  {profile.title}
                 </Badge>
               </div>
               <p className='text-sm leading-relaxed text-muted-foreground md:max-w-xl'>
-                Mobile developer focused on crafting high-quality, maintainable apps with clean architecture, consistent delivery, and delightful user experiences.
+                {profile.summary}
               </p>
               <div className='flex flex-wrap items-center justify-center gap-4 text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground sm:justify-start'>
-                <span>Cross-platform builds</span>
-                <span>Team-driven mindset</span>
-                <span>Remote collaboration</span>
+                {profile.specialties.map((v, index) => (
+                  <span key={index}>{v}</span>
+                ))}
               </div>
             </div>
           </div>
         </div>
 
-        <div className='grid gap-3 sm:grid-cols-2'>
+        <div className='grid gap-3 sm:grid-cols-3'>
           <Button className='w-full gap-2 text-sm font-semibold' asChild>
             <Link
               download
-              href='/resume-alvindo.pdf'
+              href={profile.resumeUrl}
               target='_blank'
               rel='noopener noreferrer'
             >
-              <MdOutlineFileDownload /> Download resume
+              <MdOutlineFileDownload /> Download cv
             </Link>
           </Button>
           <Button
@@ -74,11 +75,24 @@ export const Profile = () => {
             asChild
           >
             <Link
-              href='https://wa.me/+628999015103'
+              href={profile.phone}
               target='_blank'
               rel='noopener noreferrer'
             >
               <FaWhatsapp /> Whatsapp me
+            </Link>
+          </Button>
+          <Button
+            className='w-full gap-2 text-sm font-semibold'
+            variant='outline'
+            asChild
+          >
+            <Link
+              href={profile.email}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <FaEnvelope /> Mail
             </Link>
           </Button>
         </div>
